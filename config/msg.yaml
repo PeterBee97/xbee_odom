@@ -1,0 +1,4 @@
+base_send:
+  - /robot_control
+robot_send:
+  - /integrated_to_map
