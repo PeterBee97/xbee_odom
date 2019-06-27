@@ -1,0 +1,2 @@
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{product}=="XBIB-U-SS", SYMLINK+="xbee_blue"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6011", ATTRS{serial}=="FT3200NC",ATTRS{bInterfaceNumber}=="02", SYMLINK+="xbee_green"
