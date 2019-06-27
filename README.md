@@ -2,7 +2,7 @@
 
 After seeing a mess on rosserial xbee wiki, I decided to reinvent the wheel.
 
-##Usage:
+## Usage:
 
 On robot and base station: copy udev/97-xbee.rules to /etc/udev/rules.d to fix xbee path to /dev/xbee_blue and /dev/xbee_green
 
