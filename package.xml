@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>xbee_bridge_without_arduino</name>
+  <name>xbee_bridge</name>
   <version>0.0.1</version>
-  <description>The xbee_bridge_without_arduino package</description>
+  <description>The xbee_bridge package</description>
 
   <maintainer email="jundab@andrew.cmu.edu">pbjd97</maintainer>
 

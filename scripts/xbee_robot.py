@@ -132,11 +132,11 @@ def xbee_robot():
     global port, pub
     opts, args = parser.parse_args()
     baud = 57600
-    if len(args) < 2:
+    if len(args) < 1:
         print "Not enough arguments!"
         exit()
     port_name = args[0]
-    my_address = int(args[1])
+    my_address = 0#int(args[1])
     
     port = serial.Serial(port_name, baud, timeout=0.1)
     if beginAtMode(port):
@@ -145,7 +145,7 @@ def xbee_robot():
         print "Failed to connect to the XBee"
         exit()
 
-    cmd = 'AP1,CE0,MY%d,BD%d,ID%d,RN1,RO5,WR'%(int(args[1]),baud_lookup[baud],opts.pan_id)
+    cmd = 'AP1,CE0,MY%d,BD%d,ID%d,RN1,RO5,WR'%(my_address,baud_lookup[baud],opts.pan_id)
     
     if setAT(port, 'RE'): #reset the xbee
         print "XBee reset"

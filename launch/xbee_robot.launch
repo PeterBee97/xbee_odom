@@ -1,0 +1,5 @@
+<launch>
+<arg name="port" default="/dev/xbee"/>
+<arg name="baud" default="57600"/>
+<node pkg="xbee_bridge" name="xbee_robot" type="xbee_robot.py" args="$(arg port)" output="screen" required="true"/>
+</launch>
